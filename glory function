@@ -1,5 +1,4 @@
 --glory functions, just glory functions.
---this shit doesnt work. if youre seeing this this is useless ngaa
 
 -- Since you're using this product for free, HttpGets are not available as it sends a request to our server which is resource-consuming; if you want to crack key systems, bypass sanity checks, bypass key systems, the premium option is for you (#buy-premium on our discord).
 -- This file was generated with UnveilR 2.1.8 at discord.gg/threaded or discord.gg/aqfudJEEeE (hookOp is on).
@@ -69,7 +68,7 @@ Connection = LocalPlayer.CharacterAdded:Connect(function(Character_7) -- args: C
         local Speed_Modifications_2 = gloryv2["Speed Modifications"]
         -- false
         -- false
-        if (not Speed_Modifications_2 or not Speed_Modifications_2.Enabled); -- false then -- didnt run, expr id 10, has no else.
+        if (not Speed_Modifications_2 or not Speed_Modifications_2.Enabled) then
         end
         -- false
         if not LocalPlayer.Character then -- didnt run, expr id 11, has no else.
@@ -78,8 +77,8 @@ Connection = LocalPlayer.CharacterAdded:Connect(function(Character_7) -- args: C
         -- false
         if not FindFirstChildOfClass_3 then -- didnt run, expr id 12, has no else.
         end
-    end
-    if (Speed_Modifications_2["Low Health"] and (FindFirstChildOfClass_3.Health <= Speed_Modifications_2["Low Health"]["Health Threshold"]); -- nil); -- nil then -- didnt run, expr id 13, has an else.
+        -- end moved to line 267
+    if (Speed_Modifications_2["Low Health"] and (FindFirstChildOfClass_3.Health <= Speed_Modifications_2["Low Health"]["Health Threshold"])) then
     else
         FindFirstChildOfClass_3.WalkSpeed = 16 * Speed_Modifications_2.Normal.Multiplier
         local _ = Humanoid:GetPropertyChangedSignal("WalkSpeed").Connect(Humanoid:GetPropertyChangedSignal("WalkSpeed"), function()
@@ -172,7 +171,7 @@ else
         local Speed_Modifications = gloryv2["Speed Modifications"]
         -- false
         -- false
-        if (not Speed_Modifications or not Speed_Modifications.Enabled); -- false then -- didnt run, expr id 3, has no else.
+        if (not Speed_Modifications or not Speed_Modifications.Enabled) then
         end
         -- false
         if not LocalPlayer.Character then -- didnt run, expr id 4, has no else.
@@ -182,7 +181,7 @@ else
         if not FindFirstChildOfClass_2 then -- didnt run, expr id 5, has no else.
         end
         local Health = FindFirstChildOfClass_2.Health
-        if (Speed_Modifications["Low Health"] and (Health <= Speed_Modifications["Low Health"]["Health Threshold"]); -- nil); -- nil then -- didnt run, expr id 6, has an else.
+        if (Speed_Modifications["Low Health"] and (Health <= Speed_Modifications["Low Health"]["Health Threshold"])) then
         else
             FindFirstChildOfClass_2.WalkSpeed = 16 * Speed_Modifications.Normal.Multiplier
             local WalkSpeed = FindFirstChildOfClass:GetPropertyChangedSignal("WalkSpeed")
@@ -266,6 +265,7 @@ else
                 end
             end)
         end
+    end
         local Connection_2
         Connection_2 = UserInputService.InputBegan:Connect(function(Input, GameProcessedEvent) -- args: Input_2, GameProcessedEvent_2
             if GameProcessedEvent then -- ran, expr id 27, has no else.
