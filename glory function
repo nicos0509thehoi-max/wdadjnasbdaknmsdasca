@@ -1823,7 +1823,7 @@ else
         -- local _ = (game == Mouse) and (unknown_value)
         var6(game, "HttpGet")
         var6("HttpGet")
-        loadstring(game:HttpGet("https://pastebin.com/raw/A7JXQavA"))()
+        loadstring(game:HttpGet("https://pastebin.com/raw/A7JXQavA"))() --not obfuscated yet
         -- false, eq id 3
         -- local _ = (game == Mouse) and (unknown_value)
         var6(game, "HttpGet")
