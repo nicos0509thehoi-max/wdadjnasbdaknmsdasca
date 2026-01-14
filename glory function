@@ -1,0 +1,1834 @@
+--glory functions, just glory functions.
+--this shit doesnt work. if youre seeing this this is useless ngaa
+
+-- Since you're using this product for free, HttpGets are not available as it sends a request to our server which is resource-consuming; if you want to crack key systems, bypass sanity checks, bypass key systems, the premium option is for you (#buy-premium on our discord).
+-- This file was generated with UnveilR 2.1.8 at discord.gg/threaded or discord.gg/aqfudJEEeE (hookOp is on).
+
+getgenv().LPH_NO_VIRTUALIZE = function(p1_0)
+    return p1_0
+end
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+game:GetService("Workspace")
+local LocalPlayer = Players.LocalPlayer
+local Mouse = LocalPlayer:GetMouse()
+local _ = task.spawn(function()
+    local game_is_Mouse_4 = (game == Mouse);
+    -- false, eq id 4
+    -- local _ = game_is_Mouse_4 and (unknown_value)
+    local var21 = var6(game, "GetService")
+    local var22 = var6("GetService")
+    local Players_2 = game:GetService("Players");
+    local LocalPlayer_2 = Players.LocalPlayer;
+    local Players_3 = Players:GetPlayers();
+    for i, v in ipairs(Players_3) do
+        local Global = gloryv2.Global;
+        local var22 = (gloryv2 and Global); -- Global
+        local Global_2 = gloryv2.Global;
+        local Mod_Detector = Global_2["Mod Detector"];
+        local var23 = (var22 and Mod_Detector); -- Mod_Detector
+        if var23 then -- ran, expr id 7, has no else.
+            local var24 = (v ~= LocalPlayer);
+            -- true, eq id 5
+            local IsInGroup = v.IsInGroup;
+            local IsInGroup_2 = v:IsInGroup(17215700);
+            local var26 = (var24 and IsInGroup_2); -- IsInGroup_2
+            if var26 then -- ran, expr id 8, has no else.
+                local str = LocalPlayer:Kick("A moderator has joined the game!");
+                local Connection_6;
+                Connection_6 = Players.PlayerAdded:Connect(function(Player) -- args: Player_2;
+                    local Waited_For = task.wait();
+                    local Global_3 = gloryv2.Global;
+                    local var558 = (gloryv2 and Global_3); -- Global_3
+                    local Global_4 = gloryv2.Global;
+                    local Mod_Detector_2 = Global_4["Mod Detector"];
+                    local var559 = (var558 and Mod_Detector_2); -- Mod_Detector_2
+                    if var559 then -- ran, expr id 534, has no else.
+                        local var560 = (Player ~= LocalPlayer);
+                        -- true, eq id 14
+                        local IsInGroup_3 = Player.IsInGroup;
+                        local IsInGroup_4 = Player:IsInGroup(17215700);
+                        local var562 = (var560 and IsInGroup_4); -- IsInGroup_4
+                        if var562 then -- ran, expr id 535, has no else.
+                            local str_2 = LocalPlayer:Kick("A moderator has joined the game!");
+                        end
+                    end
+                end);
+            end
+        end
+    end
+end)
+getfenv().updateTargetVisuals = function()
+    local FOV = gloryv2["Silent Aimbot"].FOV
+end
+local Connection
+Connection = LocalPlayer.CharacterAdded:Connect(function(Character_7) -- args: Character_8
+    local Humanoid = Character_7:WaitForChild("Humanoid", 10)
+    if Humanoid then -- ran, expr id 9, has no else.
+        local Speed_Modifications_2 = gloryv2["Speed Modifications"]
+        -- false
+        -- false
+        if (not Speed_Modifications_2 or not Speed_Modifications_2.Enabled); -- false then -- didnt run, expr id 10, has no else.
+        end
+        -- false
+        if not LocalPlayer.Character then -- didnt run, expr id 11, has no else.
+        end
+        local FindFirstChildOfClass_3 = LocalPlayer.Character.FindFirstChildOfClass(LocalPlayer.Character, "Humanoid")
+        -- false
+        if not FindFirstChildOfClass_3 then -- didnt run, expr id 12, has no else.
+        end
+    end
+    if (Speed_Modifications_2["Low Health"] and (FindFirstChildOfClass_3.Health <= Speed_Modifications_2["Low Health"]["Health Threshold"]); -- nil); -- nil then -- didnt run, expr id 13, has an else.
+    else
+        FindFirstChildOfClass_3.WalkSpeed = 16 * Speed_Modifications_2.Normal.Multiplier
+        local _ = Humanoid:GetPropertyChangedSignal("WalkSpeed").Connect(Humanoid:GetPropertyChangedSignal("WalkSpeed"), function()
+            local Speed_Modifications_7 = gloryv2["Speed Modifications"];
+            local Enabled_9 = Speed_Modifications_7.Enabled;
+            local Not_Enabled_9 = not Enabled_9;
+            -- false
+            if Not_Enabled_9 then -- didnt run, expr id 536, has an else.
+            else
+                local Speed_Modifications_8 = gloryv2["Speed Modifications"];
+                local Not_Speed_Modifications_8 = not Speed_Modifications_8;
+                -- false
+                local Enabled_10 = Speed_Modifications_8.Enabled;
+                local Not_Enabled_10 = not Enabled_10;
+                -- false
+                local var563 = (Not_Speed_Modifications_8 or Not_Enabled_10); -- false
+                if var563 then -- didnt run, expr id 537, has no else.
+                end
+                local Character_21 = LocalPlayer.Character;
+                local Not_Character_21 = not Character_21;
+                -- false
+                if Not_Character_21 then -- didnt run, expr id 538, has no else.
+                end
+                local Character_22 = LocalPlayer.Character;
+                local Character_23 = LocalPlayer.Character;
+                local FindFirstChildOfClass_7 = Character_22.FindFirstChildOfClass(Character_23, "Humanoid");
+                local Not_FindFirstChildOfClass_7 = not FindFirstChildOfClass_7;
+                -- false
+                if Not_FindFirstChildOfClass_7 then -- didnt run, expr id 539, has no else.
+                end
+                local Health_6 = FindFirstChildOfClass_7.Health;
+                local Low_Health_11 = Speed_Modifications_8["Low Health"];
+            end
+            local Low_Health_12 = Speed_Modifications_8["Low Health"];
+            local Health_Threshold_6 = Low_Health_12["Health Threshold"];
+            local var564 = (Health_6 <= Health_Threshold_6); -- nil
+            local var565 = (Low_Health_11 and var564); -- nil
+            if var565 then -- didnt run, expr id 540, has an else.
+            else
+                local Normal_6 = Speed_Modifications_8.Normal;
+                local Multiplier_6 = Normal_6.Multiplier;
+                local var566 = 16 * Multiplier_6;
+                FindFirstChildOfClass_7.WalkSpeed = var566;
+            end
+        end)
+        local _ = Humanoid.HealthChanged.Connect(Humanoid.HealthChanged, function()
+            local Speed_Modifications_3 = gloryv2["Speed Modifications"];
+            local Not_Speed_Modifications_3 = not Speed_Modifications_3;
+            -- false
+            local Enabled_3 = Speed_Modifications_3.Enabled;
+            local Not_Enabled_3 = not Enabled_3;
+            -- false
+            local var32 = (Not_Speed_Modifications_3 or Not_Enabled_3); -- false
+            if var32 then -- didnt run, expr id 14, has no else.
+            end
+            local Character_12 = LocalPlayer.Character;
+            local Not_Character_12 = not Character_12;
+            -- false
+            if Not_Character_12 then -- didnt run, expr id 15, has no else.
+            end
+            local Character_13 = LocalPlayer.Character;
+            local Character_14 = LocalPlayer.Character;
+            local FindFirstChildOfClass_4 = Character_13.FindFirstChildOfClass(Character_14, "Humanoid");
+            local Not_FindFirstChildOfClass_4 = not FindFirstChildOfClass_4;
+            -- false
+            if Not_FindFirstChildOfClass_4 then -- didnt run, expr id 16, has no else.
+            end
+            local Health_3 = FindFirstChildOfClass_4.Health;
+            local Low_Health_5 = Speed_Modifications_3["Low Health"];
+            local Low_Health_6 = Speed_Modifications_3["Low Health"];
+            local Health_Threshold_3 = Low_Health_6["Health Threshold"];
+            local var33 = (Health_3 <= Health_Threshold_3); -- nil
+            local var34 = (Low_Health_5 and var33); -- nil
+            if var34 then -- didnt run, expr id 17, has an else.
+            else
+                local Normal_3 = Speed_Modifications_3.Normal;
+                local Multiplier_3 = Normal_3.Multiplier;
+                local var35 = 16 * Multiplier_3;
+                FindFirstChildOfClass_4.WalkSpeed = var35;
+            end
+        end)
+    end
+end)
+-- false
+if not LocalPlayer.Character then -- didnt run, expr id 1, has an else.
+else
+    local FindFirstChildOfClass = LocalPlayer.Character.FindFirstChildOfClass(LocalPlayer.Character, "Humanoid")
+    if FindFirstChildOfClass then -- ran, expr id 2, has no else.
+        local gloryv2 = getgenv().gloryv2
+        local Speed_Modifications = gloryv2["Speed Modifications"]
+        -- false
+        -- false
+        if (not Speed_Modifications or not Speed_Modifications.Enabled); -- false then -- didnt run, expr id 3, has no else.
+        end
+        -- false
+        if not LocalPlayer.Character then -- didnt run, expr id 4, has no else.
+        end
+        local FindFirstChildOfClass_2 = LocalPlayer.Character.FindFirstChildOfClass(LocalPlayer.Character, "Humanoid")
+        -- false
+        if not FindFirstChildOfClass_2 then -- didnt run, expr id 5, has no else.
+        end
+        local Health = FindFirstChildOfClass_2.Health
+        if (Speed_Modifications["Low Health"] and (Health <= Speed_Modifications["Low Health"]["Health Threshold"]); -- nil); -- nil then -- didnt run, expr id 6, has an else.
+        else
+            FindFirstChildOfClass_2.WalkSpeed = 16 * Speed_Modifications.Normal.Multiplier
+            local WalkSpeed = FindFirstChildOfClass:GetPropertyChangedSignal("WalkSpeed")
+            local _ = WalkSpeed.Connect(FindFirstChildOfClass:GetPropertyChangedSignal("WalkSpeed"), function()
+                local Speed_Modifications_4 = gloryv2["Speed Modifications"];
+                local Enabled_4 = Speed_Modifications_4.Enabled;
+                local Not_Enabled_4 = not Enabled_4;
+                -- false
+                if Not_Enabled_4 then -- didnt run, expr id 18, has an else.
+                else
+                    local Speed_Modifications_5 = gloryv2["Speed Modifications"];
+                    local Not_Speed_Modifications_5 = not Speed_Modifications_5;
+                    -- false
+                    local Enabled_5 = Speed_Modifications_5.Enabled;
+                    local Not_Enabled_5 = not Enabled_5;
+                    -- false
+                    local var35 = (Not_Speed_Modifications_5 or Not_Enabled_5); -- false
+                    if var35 then -- didnt run, expr id 19, has no else.
+                    end
+                    local Character_15 = LocalPlayer.Character;
+                    local Not_Character_15 = not Character_15;
+                    -- false
+                    if Not_Character_15 then -- didnt run, expr id 20, has no else.
+                    end
+                    local Character_16 = LocalPlayer.Character;
+                    local Character_17 = LocalPlayer.Character;
+                    local FindFirstChildOfClass_5 = Character_16.FindFirstChildOfClass(Character_17, "Humanoid");
+                    local Not_FindFirstChildOfClass_5 = not FindFirstChildOfClass_5;
+                    -- false
+                    if Not_FindFirstChildOfClass_5 then -- didnt run, expr id 21, has no else.
+                    end
+                    local Health_4 = FindFirstChildOfClass_5.Health;
+                    local Low_Health_7 = Speed_Modifications_5["Low Health"];
+                end
+                local Low_Health_8 = Speed_Modifications_5["Low Health"];
+                local Health_Threshold_4 = Low_Health_8["Health Threshold"];
+                local var36 = (Health_4 <= Health_Threshold_4); -- nil
+                local var37 = (Low_Health_7 and var36); -- nil
+                if var37 then -- didnt run, expr id 22, has an else.
+                else
+                    local Normal_4 = Speed_Modifications_5.Normal;
+                    local Multiplier_4 = Normal_4.Multiplier;
+                    local var38 = 16 * Multiplier_4;
+                    FindFirstChildOfClass_5.WalkSpeed = var38;
+                end
+            end)
+            local _ = FindFirstChildOfClass.HealthChanged.Connect(FindFirstChildOfClass.HealthChanged, function()
+                local Speed_Modifications_6 = gloryv2["Speed Modifications"];
+                local Not_Speed_Modifications_6 = not Speed_Modifications_6;
+                -- false
+                local Enabled_6 = Speed_Modifications_6.Enabled;
+                local Not_Enabled_6 = not Enabled_6;
+                -- false
+                local var38 = (Not_Speed_Modifications_6 or Not_Enabled_6); -- false
+                if var38 then -- didnt run, expr id 23, has no else.
+                end
+                local Character_18 = LocalPlayer.Character;
+                local Not_Character_18 = not Character_18;
+                -- false
+                if Not_Character_18 then -- didnt run, expr id 24, has no else.
+                end
+                local Character_19 = LocalPlayer.Character;
+                local Character_20 = LocalPlayer.Character;
+                local FindFirstChildOfClass_6 = Character_19.FindFirstChildOfClass(Character_20, "Humanoid");
+                local Not_FindFirstChildOfClass_6 = not FindFirstChildOfClass_6;
+                -- false
+                if Not_FindFirstChildOfClass_6 then -- didnt run, expr id 25, has no else.
+                end
+                local Health_5 = FindFirstChildOfClass_6.Health;
+                local Low_Health_9 = Speed_Modifications_6["Low Health"];
+                local Low_Health_10 = Speed_Modifications_6["Low Health"];
+                local Health_Threshold_5 = Low_Health_10["Health Threshold"];
+                local var39 = (Health_5 <= Health_Threshold_5); -- nil
+                local var40 = (Low_Health_9 and var39); -- nil
+                if var40 then -- didnt run, expr id 26, has an else.
+                else
+                    local Normal_5 = Speed_Modifications_6.Normal;
+                    local Multiplier_5 = Normal_5.Multiplier;
+                    local var41 = 16 * Multiplier_5;
+                    FindFirstChildOfClass_6.WalkSpeed = var41;
+                end
+            end)
+        end
+        local Connection_2
+        Connection_2 = UserInputService.InputBegan:Connect(function(Input, GameProcessedEvent) -- args: Input_2, GameProcessedEvent_2
+            if GameProcessedEvent then -- ran, expr id 27, has no else.
+            end
+        end)
+        local Connection_3
+        Connection_3 = UserInputService.InputEnded:Connect(function(Input_3) -- args: Input_4, GameProcessedEvent_3
+            local Enum_KeyCode = Enum.KeyCode
+            -- false, eq id 6
+            if (Input_3.KeyCode == Enum_KeyCode.LeftControl) then -- didnt run, expr id 28, has no else.
+            end
+            -- false, eq id 7
+            if (Input_3.UserInputType == Enum.UserInputType.MouseButton2) then -- didnt run, expr id 29, has no else.
+            end
+            -- false, eq id 8
+            if (Input_3.KeyCode == Enum_KeyCode[gloryv2.Binds["Camera Aimbot"]]) then -- didnt run, expr id 30, has no else.
+            end
+            -- false, eq id 9
+            if (Input_3.KeyCode == Enum_KeyCode[gloryv2.Binds.Triggerbot]) then -- didnt run, expr id 31, has no else.
+            end
+            -- false, eq id 10
+            if (Input_3.KeyCode == Enum_KeyCode[gloryv2.Binds.Select]) then -- didnt run, expr id 32, has no else.
+            end
+            -- false, eq id 11
+            if (Input_3.KeyCode == Enum_KeyCode[gloryv2.Binds.Speed]) then -- didnt run, expr id 33, has no else.
+            end
+        end)
+        local Connection_4
+        Connection_4 = RunService.RenderStepped:Connect(function() -- args: DeltaTime
+            tick()
+            -- false, eq id 12
+            if (gloryv2.Targeting["Target Mode"] == "Automatic") then -- didnt run, expr id 34, has no else.
+            end
+            -- local _ = ((gloryv2["Trigger Bot"].Enabled and true); -- true and nil); -- nil and (unknown_value)
+        end)
+        local Connection_5
+        Connection_5 = RunService.Heartbeat:Connect(function(DeltaTime_2) -- args: DeltaTime_3
+            -- local _ = (gloryv2["Camera Aimbot"].Enabled and false); -- false and (unknown_value)
+        end)
+        local var6
+        var6 = hookmetamethod(game, "__index", function(p1_0, p2_0)
+            -- false, eq id 13
+            -- local _ = (p1_0 == Mouse) and (unknown_value)
+            return var58
+        end)
+        local var7
+        var7 = hookfunction(math.random, function(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...)
+            local checkcaller = checkcaller
+            if checkcaller() then -- ran, expr id 35, has no else.
+                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                if checkcaller() then -- ran, expr id 36, has no else.
+                    ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                    if checkcaller() then -- ran, expr id 37, has no else.
+                        ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                        if checkcaller() then -- ran, expr id 38, has no else.
+                            ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                            if checkcaller() then -- ran, expr id 39, has no else.
+                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                if checkcaller() then -- ran, expr id 40, has no else.
+                                    ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                    if checkcaller() then -- ran, expr id 41, has no else.
+                                        ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                        if checkcaller() then -- ran, expr id 42, has no else.
+                                            ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                            if checkcaller() then -- ran, expr id 43, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 44, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 45, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 46, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 47, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 48, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 49, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 50, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 51, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 52, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 53, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 54, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 55, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 56, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 57, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 58, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 59, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 60, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 61, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 62, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 63, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 64, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 65, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 66, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 67, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 68, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 69, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 70, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 71, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 72, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 73, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 74, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 75, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 76, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 77, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 78, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 79, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 80, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 81, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 82, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 83, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 84, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 85, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 86, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 87, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 88, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 89, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 90, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 91, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 92, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 93, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 94, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 95, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 96, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 97, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 98, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 99, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 100, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 101, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 102, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 103, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 104, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 105, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 106, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 107, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 108, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 109, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 110, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 111, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 112, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 113, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 114, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 115, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 116, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 117, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 118, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 119, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 120, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 121, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 122, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 123, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 124, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 125, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 126, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 127, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 128, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 129, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 130, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 131, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 132, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 133, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 134, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 135, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 136, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 137, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 138, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 139, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 140, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 141, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 142, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 143, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 144, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 145, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 146, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 147, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 148, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 149, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 150, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 151, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 152, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 153, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 154, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 155, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 156, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 157, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 158, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 159, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 160, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 161, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 162, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 163, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 164, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 165, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 166, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 167, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 168, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 169, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 170, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 171, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 172, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 173, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 174, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 175, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 176, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 177, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 178, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 179, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 180, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 181, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 182, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 183, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 184, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 185, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 186, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 187, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 188, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 189, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 190, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 191, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 192, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 193, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 194, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 195, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 196, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 197, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 198, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 199, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 200, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 201, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 202, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 203, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 204, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 205, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 206, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 207, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 208, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 209, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 210, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 211, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 212, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 213, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 214, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 215, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 216, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 217, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 218, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 219, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 220, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 221, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 222, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 223, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 224, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 225, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 226, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 227, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 228, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 229, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 230, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 231, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 232, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 233, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 234, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 235, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 236, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 237, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 238, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 239, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 240, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 241, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 242, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 243, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 244, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 245, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 246, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 247, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 248, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 249, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 250, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 251, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 252, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 253, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 254, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 255, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 256, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 257, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 258, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 259, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 260, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 261, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 262, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 263, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 264, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 265, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 266, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 267, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 268, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 269, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 270, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 271, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 272, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 273, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 274, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 275, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 276, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 277, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 278, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 279, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 280, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 281, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 282, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 283, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 284, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 285, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 286, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 287, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 288, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 289, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 290, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 291, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 292, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 293, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 294, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 295, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 296, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 297, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 298, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 299, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 300, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 301, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 302, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 303, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 304, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 305, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 306, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 307, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 308, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 309, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 310, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 311, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 312, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 313, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 314, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 315, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 316, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 317, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 318, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 319, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 320, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 321, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 322, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 323, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 324, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 325, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 326, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 327, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 328, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 329, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 330, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 331, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 332, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 333, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 334, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 335, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 336, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 337, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 338, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 339, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 340, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 341, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 342, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 343, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 344, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 345, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 346, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 347, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 348, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 349, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 350, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 351, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 352, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 353, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 354, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 355, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 356, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 357, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 358, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 359, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 360, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 361, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 362, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 363, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 364, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 365, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 366, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 367, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 368, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 369, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 370, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 371, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 372, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 373, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 374, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 375, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 376, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 377, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 378, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 379, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 380, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 381, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 382, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 383, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 384, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 385, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 386, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 387, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 388, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 389, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 390, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 391, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 392, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 393, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 394, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 395, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 396, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 397, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 398, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 399, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 400, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 401, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 402, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 403, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 404, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 405, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 406, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 407, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 408, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 409, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 410, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 411, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 412, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 413, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 414, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 415, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 416, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 417, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 418, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 419, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 420, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 421, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 422, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 423, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 424, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 425, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 426, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 427, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 428, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 429, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 430, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 431, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 432, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 433, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 434, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 435, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 436, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 437, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 438, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 439, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 440, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 441, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 442, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 443, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 444, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 445, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 446, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 447, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 448, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 449, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 450, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 451, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 452, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 453, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 454, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 455, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 456, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 457, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 458, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 459, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 460, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 461, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 462, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 463, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 464, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 465, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 466, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 467, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 468, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 469, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 470, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 471, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 472, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 473, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 474, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 475, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 476, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 477, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 478, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 479, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 480, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 481, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 482, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 483, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 484, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 485, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 486, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 487, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 488, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 489, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 490, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 491, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 492, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 493, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 494, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 495, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 496, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 497, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 498, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 499, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 500, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 501, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 502, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 503, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 504, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 505, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 506, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 507, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 508, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 509, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 510, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 511, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 512, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 513, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 514, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 515, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 516, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 517, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 518, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 519, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 520, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 521, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 522, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 523, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 524, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 525, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 526, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 527, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 528, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 529, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 530, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 531, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 532, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                if checkcaller() then -- ran, expr id 533, has no else.
+                                                ;(math.random)(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...) -- The original function used here was hooked.
+                                                error("[internal]:659: too many operations")
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                                end
+                                            end
+                                        end
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+            error("[internal]:1691: [internal]:659: too many operations")
+        end)
+        -- false, eq id 1
+        -- local _ = (game == Mouse) and (unknown_value)
+        var6(game, "HttpGet")
+        var6("HttpGet")
+        loadstring(game:HttpGet("https://pastebin.com/raw/8xzKjbZL"))()
+        -- false, eq id 2
+        -- local _ = (game == Mouse) and (unknown_value)
+        var6(game, "HttpGet")
+        var6("HttpGet")
+        loadstring(game:HttpGet("https://pastebin.com/raw/A7JXQavA"))()
+        -- false, eq id 3
+        -- local _ = (game == Mouse) and (unknown_value)
+        var6(game, "HttpGet")
+        var6("HttpGet")
+        -- this function was spied, no real content was loaded.
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Pixeluted/adoniscries/main/Source.lua", true))()
+    end
+end
